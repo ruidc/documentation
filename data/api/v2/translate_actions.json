@@ -634,6 +634,10 @@
     "description": "Get estimated cost across multi-org account.",
     "summary": "Get estimated cost across multi-org account"
   },
+  "GetHourlyUsage": {
+    "description": "Get hourly usage by product family",
+    "summary": "Get hourly usage by product family"
+  },
   "GetUsageLambdaTracedInvocations": {
     "description": "Get hourly usage for Lambda Traced Invocations.",
     "summary": "Get hourly usage for Lambda Traced Invocations"

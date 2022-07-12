@@ -1274,7 +1274,7 @@ main:
     parent: tracing
     identifier: tracing_trace_collection
     weight: 2
-  - name: Instrumenting with Datadog Tracing Libraries 
+  - name: Instrumenting with Datadog Tracing Libraries
     url: tracing/trace_collection/dd_libraries/java/
     parent: tracing_trace_collection
     identifier: tracing_dd_libraries
@@ -1692,27 +1692,27 @@ main:
     parent: tracing
     identifier: tracing_services
     weight: 7
-  - name: Services List 
+  - name: Services List
     url: tracing/services/services_list/
     parent: tracing_services
     identifier: tracing_services_list
     weight: 601
-  - name: Service Page 
+  - name: Service Page
     url: tracing/services/service_page/
     parent: tracing_services
     identifier: tracing_service_page
     weight: 602
-  - name: Resource Page 
+  - name: Resource Page
     url: tracing/services/resource_page/
     parent: tracing_services
     identifier: tracing_resource_page
     weight: 603
-  - name: Deployment Tracking 
+  - name: Deployment Tracking
     url: tracing/services/deployment_tracking/
     parent: tracing_services
     identifier: tracing_deployment_tracking
     weight: 604
-  - name: Service Map 
+  - name: Service Map
     url: tracing/services/services_map/
     parent: tracing_services
     identifier: tracing_service_map
@@ -5119,6 +5119,18 @@ api:
     url: /api/latest/security-monitoring/
     identifier: security-monitoring
     generated: true
+  - name: Change the related incidents of a security signal
+    url: '#change-the-related-incidents-of-a-security-signal'
+    identifier: security-monitoring-change-the-related-incidents-of-a-security-signal
+    parent: security-monitoring
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - EditSecurityMonitoringSignalIncidents
+      unstable: []
+      order: 0
   - name: Get a list of security signals
     url: '#get-a-list-of-security-signals'
     identifier: security-monitoring-get-a-list-of-security-signals
@@ -5271,6 +5283,7 @@ api:
     params:
       versions:
         - v1
+        - v2
       operationids:
         - EditSecurityMonitoringSignalState
       unstable: []
@@ -5283,6 +5296,7 @@ api:
     params:
       versions:
         - v1
+        - v2
       operationids:
         - EditSecurityMonitoringSignalAssignee
       unstable: []
